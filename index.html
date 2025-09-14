@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="icon" href="icons/favicon.ico">
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>flower shop Blume</title>
 </head>
 <body>
@@ -18,13 +17,22 @@
         <div class="header__logo">
             <img src="./images/logo.svg" alt="flower shop Blume">
         </div>
-        <div class="header__kv pc-only">
-            <div class="header__wrapper">
-                <img src="./images/kv01.jpg" alt="キービジュアル">
-                <img src="./images/kv02.jpg" alt="キービジュアル">
-                <img src="./images/kv03.jpg" alt="キービジュアル">
-                <img src="./images/kv04.jpg" alt="キービジュアル">
-                <img src="./images/kv05.jpg" alt="キービジュアル">            
+        <div class="header__kv pc-only" data-aos=”fade”>
+            <div class="slider-wrapper">
+                <ul class="slider">
+                    <li class="slide"><img src="./images/kv01.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv02.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv03.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv04.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv05.jpg" alt=""></li>
+
+                    <!-- ループ用に複製 -->
+                    <li class="slide"><img src="./images/kv01.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv02.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv03.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv04.jpg" alt=""></li>
+                    <li class="slide"><img src="./images/kv05.jpg" alt=""></li>
+                </ul>
             </div>
         </div>
         <div class="header__kv sp-only">
@@ -177,5 +185,10 @@
     <footer>
         <p>© 2024 Blume, inc.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 </html>

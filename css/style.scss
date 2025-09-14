@@ -80,6 +80,9 @@ li {
 }
 
 .header__kv {
+    width: 120vw;
+    display: flex;
+    align-items: center;
     height: auto;
     text-align: center;
     @include mq(sp) {
@@ -87,14 +90,39 @@ li {
         display: block;
     }
 }
-.header__wrapper {
-    display: flex;
-    justify-content: center;
-    img {
-        display: block;
-        min-width: 320px;
-    }
+.slider-wrapper {
+  overflow: hidden;
+  width: 100vw;
 }
+
+.slider {
+    display: flex;
+  /* 5枚ぶんが流れたらちょうど繋がる */
+    animation: scroll-left 25s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+  width: calc(100vw / 4); /* 4枚で1画面に収まる */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* 縦横比のズレ防止（必要なら） */
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100vw / 4 * 5)); 
+    } /* 5枚ぶん流す */
+}
+
+
 
 
 .header__menu nav{
@@ -148,8 +176,8 @@ h3 {
     font-feature-settings: "palt";
     letter-spacing: 0.1em;
         @include mq(sp) {
-        font-size: 24px;
-        line-height: 1.2;
+        font-size: 23px;
+        line-height: 1.5;
     }
 }
 

@@ -78,6 +78,9 @@ li {
 }
 
 .header__kv {
+  width: 120vw;
+  display: flex;
+  align-items: center;
   height: auto;
   text-align: center;
 }
@@ -88,15 +91,38 @@ li {
   }
 }
 
-.header__wrapper {
-  display: flex;
-  justify-content: center;
-}
-.header__wrapper img {
-  display: block;
-  min-width: 320px;
+.slider-wrapper {
+  overflow: hidden;
+  width: 100vw;
 }
 
+.slider {
+  display: flex;
+  /* 5枚ぶんが流れたらちょうど繋がる */
+  animation: scroll-left 25s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 25vw; /* 4枚で1画面に収まる */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; /* 縦横比のズレ防止（必要なら） */
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-125vw);
+  } /* 5枚ぶん流す */
+}
 .header__menu nav {
   width: 65%;
   margin: 75px auto 45px;
@@ -161,8 +187,8 @@ h3 {
 }
 @media screen and (max-width: 767px) {
   h3 {
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: 23px;
+    line-height: 1.5;
   }
 }
 
