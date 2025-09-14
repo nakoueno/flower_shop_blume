@@ -8,16 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="icons/favicon.ico">
     <title>flower shop Blume</title>
 </head>
 <body>
     <header>
-        <div class="header__logo">
+        <div class="header__logo" data-aos="fade">
             <img src="./images/logo.svg" alt="flower shop Blume">
         </div>
-        <div class="header__kv pc-only" data-aos=”fade”>
+        <div class="header__kv pc-only" data-aos="fade">
             <div class="slider-wrapper">
                 <ul class="slider">
                     <li class="slide"><img src="./images/kv01.jpg" alt=""></li>
@@ -35,12 +35,16 @@
                 </ul>
             </div>
         </div>
-        <div class="header__kv sp-only">
-            <div class="header__wrapper">
+        <div class="sp-only">
+            <div class="main-visual__sp">
+                <img src="./images/kv01.jpg" alt="キービジュアル">
+                <img src="./images/kv02.jpg" alt="キービジュアル">
                 <img src="./images/kv03.jpg" alt="キービジュアル">
+                <img src="./images/kv04.jpg" alt="キービジュアル">
+                <img src="./images/kv05.jpg" alt="キービジュアル">
             </div>
         </div>
-        <div class="header__menu">
+        <div class="header__menu" data-aos="fade">
             <nav>
                 <ul class="header__menu_li">
                     <li><a href="#concept">CONCEPT</a></li>
@@ -56,13 +60,13 @@
     <main>
         <section id="concept">
             <div class="concept__inner wrapper">
-                <h2 class="h2-blk">CONCEPT</h2>
-                <h3>「よろこび」の色で染める。<br class="sp-only">「あいさつ」をいろどる。</h3>
-                <p>花を通じて、感謝や喜びを表現することが私たちの使命です。<br class="pc-only">
+                <h2 class="h2-blk" data-aos="fade">CONCEPT</h2>
+                <h3 data-aos="fade">「よろこび」の色で染める。<br class="sp-only">「あいさつ」をいろどる。</h3>
+                <p data-aos="fade">花を通じて、感謝や喜びを表現することが私たちの使命です。<br class="pc-only">
                     季節ごとの美しい花々は、心を込めた贈り物として、大切な人に笑顔を届けるために選ばれています。<br class="pc-only">
                     挨拶や感謝の気持ちを、色鮮やかなお花で彩り、心と心をつなぐ温かい瞬間をサポートします。<br class="pc-only">
                     お花を通じて日常に「よろこび」と「彩り」を届け、特別な瞬間をさらに輝かせます。</p>
-                <div class="concept__inner__img">
+                <div class="concept__inner__img" data-aos="fade">
                     <img src="./images/concept01.png" alt="フラワー">
                     <img src="./images/concept02.png" alt="フラワー">
                     <img src="./images/concept03.png" alt="フラワー">
@@ -73,10 +77,10 @@
 
         <section id="bouquet" class="wrapper">
             <div class="bouquet__inner">
-                <h2 class="h2-wht">BOUQUET</h2>
+                <h2 class="h2-wht" data-aos="fade">BOUQUET</h2>
             </div>
             <ul>
-                <li class="bouquet__list">
+                <li class="bouquet__list" data-aos="fade">
                     <img src="./images/bouquet01.jpg" alt="ブーケ写真">
                     <div class="bouquet__list-p">
                         <p class="bouquet__ttl">季節の花　ブーケ</p>
@@ -86,7 +90,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="bouquet__list">
+                <li class="bouquet__list" data-aos="fade">
                     <img src="./images/bouquet02.jpg" alt="ブーケ写真">
                     <div class="bouquet__list-p">
                         <p class="bouquet__ttl">誕生日　ブーケ</p>
@@ -96,7 +100,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="bouquet__list">
+                <li class="bouquet__list" data-aos="fade">
                     <img src="./images/bouquet03.jpg" alt="ブーケ写真">
                     <div class="bouquet__list-p">
                         <p class="bouquet__ttl">結婚式　ブーケ</p>
@@ -106,7 +110,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="bouquet__list">
+                <li class="bouquet__list" data-aos="fade">
                     <img src="./images/bouquet04.jpg" alt="ブーケ写真">
                     <div class="bouquet__list-p">
                         <p class="bouquet__ttl">ドライフラワー　ブーケ</p>
@@ -117,7 +121,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="bouquet__sns">
+            <div class="bouquet__sns" data-aos="fade">
                 <div class="bouquet__sns-ig">
                     <p>インスタグラムでも<br>商品の紹介をしています。</p>
                     <div class="btn-ig">
@@ -129,8 +133,8 @@
 
         <section id="direct-shop">
             <div class="direct__inner wrapper">
-            <h2 class="h2-blk">DIRECT SHOP</h2>
-            <ul>
+            <h2 class="h2-blk" data-aos="fade">DIRECT SHOP</h2>
+            <ul data-aos="fade">
                 <li>
                     <img src="./images/direct-shop01.jpg" alt="新宿店">
                     <p><span>新宿店</span><br>
@@ -159,7 +163,7 @@
             </div>
             </section>
 
-        <section id="online-shop">
+        <section id="online-shop" data-aos="fade">
             <div class="online-shop__inner wrapper">
                 <h2>ONLINE SHOP</h2>
                 <div class="btn-online">
@@ -169,11 +173,11 @@
         </section>
         <section id="access">
             <div class="access__inner">
-                <h2><img src="./images/logo.svg" alt="flower shop Blume"></h2>
-                <p>株式会社MIGLIORE<br>
+                <h2 data-aos="fade"><img src="./images/logo.svg" alt="flower shop Blume"></h2>
+                <p data-aos="fade">株式会社MIGLIORE<br>
                 〒012-3456 東京都渋谷区ABC<br>
                 TEL012-345-6789</p>
-                <div class="access__sns">
+                <div class="access__sns" data-aos="fade">
                     <a href="#">TWITTER</a>
                     <a href="#">INSTAGRAM</a>
                     <a href="#">FACEBOOK</a>
@@ -186,9 +190,52 @@
         <p>© 2024 Blume, inc.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/main.js"></script>
+
+
+    <!-- js読み込み -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+<!-- CDN経由でjQueryを読み込む -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+<script>
+	$(function() {
+	$('.fade').on('inview', function(event, isInView){
+		if (isInView) {
+			$(this).addClass('fade-in');
+		} else {
+			$(this).removeClass('fade-in');
+		}
+	});
+
+	// SP クロスフェード処理
+	const images = document.querySelectorAll('.main-visual__sp img');
+	let currentIndex = 0;
+
+	// 初期表示
+	images.forEach((img, i) => {
+		img.style.opacity = i === 0 ? '1' : '0';
+	});
+
+	function crossFade() {
+		const nextIndex = (currentIndex + 1) % images.length;
+
+		// 前の画像をフェードアウト
+		images[currentIndex].style.transition = 'opacity 1.5s ease-in-out';
+		images[currentIndex].style.opacity = '0';
+
+		// 次の画像をフェードイン
+		images[nextIndex].style.transition = 'opacity 1.5s ease-in-out';
+		images[nextIndex].style.opacity = '1';
+
+		currentIndex = nextIndex;
+	}
+
+		// 3秒ごとにクロスフェード
+		setInterval(crossFade, 3000);
+	});
+</script>
 
 </body>
 </html>

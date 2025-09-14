@@ -123,7 +123,25 @@ li {
 }
 
 
+	/* SPヘッダー画像 */
+	.main-visual__sp {
+    	position: relative; /* imgをabsoluteで重ねるため */
+		width: 100%;
+		padding-top: 130%; /* 必要に応じて調整 */
+		overflow: hidden;
 
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* 画像を枠に収める */
+			opacity: 0;
+			transition: opacity 1.5s ease-in-out;
+		}
+	}
+    
 
 .header__menu nav{
     width: 65%;
