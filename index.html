@@ -163,7 +163,7 @@
             </div>
             </section>
 
-        <section id="online-shop" data-aos="fade">
+        <section id="online-shop">
             <div class="online-shop__inner wrapper">
                 <h2>ONLINE SHOP</h2>
                 <div class="btn-online">
@@ -194,7 +194,14 @@
 
     <!-- js読み込み -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 700,
+            easing: "ease-out",
+            delay: 100,
+        });
+    </script>
 
 <!-- CDN経由でjQueryを読み込む -->
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
